@@ -6,13 +6,6 @@
                 url('./MuseoSansRounded-300.woff2') format('woff2');
     }
     
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: all .1s ease-in;
-}
-
 .page {
     height: 100vh;
     background-image:url(./bg.png);
@@ -106,14 +99,15 @@
 }
 
 .product-card__product-rate-items {
-    list-style-type: none;
     margin-bottom: 26px;
+    padding-left: 0;
 }
 
 .product-card__product-rate-item {
     display: inline-block;
     width: 12px;
     height: 12px;
+    list-style-type: none;
 }
 
 .product-card__product-rate-item--active polygon {
