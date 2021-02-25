@@ -5,7 +5,10 @@
                 url('./MuseoSansRounded-300.woff') format('woff'),
                 url('./MuseoSansRounded-300.woff2') format('woff2');
     }
-    
+* {
+    box-sizing: border-box;
+}
+
 .page {
     height: 100vh;
     background-image:url(./bg.png);
