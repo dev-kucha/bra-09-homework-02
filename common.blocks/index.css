@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Museo Sans Rounded';
+        
+        src:    url('./MuseoSansRounded-300.eot') format('embedded-opentype'),
+                url('./MuseoSansRounded-300.woff') format('woff'),
+                url('./MuseoSansRounded-300.woff2') format('woff2');
+    }
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body {
+    height: 100vh;
+    background-image:url(./bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Museo Sans Rounded';
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-card {
+    width: 686px;
+    height: 391px;
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+    border-radius: 10px;
+    background-color: #111a28;
+    padding: 24px 56px 21px 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card__logo-box {
+    align-self: flex-start;
+}
+
+.product-card__product-box {
+    align-self: flex-end;
+    width: 594px;
+    height: 292px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card__product-image-select {
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card__product-image {
+    width: 330px;
+    height: 240px;
+    background-image: url(./Nike-SB-Stefan-Janoski-Max.webp);
+    background-repeat: no-repeat;
+    background-position: 50% 60px;
+    text-align: center;
+}
+
+.product-card__product-colorselect {
+    bottom: 0px;
+}
+/* input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+} */
+
+/* input[type="radio"]:checked {
+    border-color: red;
+    background: #ddd;
+    color: gray;
+} */
+
+/* #select-color-black {
+    background-color: blue;
+} */
+
+.product-card__product-title {
+    color: #e1e1e1;
+    font-family: "Museo Sans Rounded";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 16px;
+}
+
+.product-card__product-subtitle {
+    opacity: 0.54;
+    color: #e1e1e1;
+    font-family: "Museo Sans Rounded";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 24px;
+}
+
+.product-card__product-rate-items {
+    list-style-type: none;
+    margin-bottom: 26px;
+}
+
+.product-card__product-rate-item {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+
+.product-card__product-rate-item--active polygon {
+    fill: #ffcc00;
+}
+
+.order-selectors {
+    display: inline-block;
+    color: #e1e1e1;
+    font-family: "Museo Sans Rounded";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 69px;
+    border: 1px solid #ffffff;
+    background-color: #111a28;
+    opacity: 0.26;
+    padding: 10px;
+    max-width: 29px;
+    margin-bottom: 30px;
+}
+
+.order-selectors::after {
+    content: url(./Rectangle.svg);
+    width: 12px;
+    height: 6px;
+    margin-left: 6px;
+}
+
+.order-selectors:hover {
+    background-color: #4c525a;
+}
+
+.submit-btn {
+    border: 1px solid #ffffff;
+    background-color: #4c525a;
+    opacity: 0.26;
+    color: #e1e1e1;
+    font-family: "Museo Sans Rounded";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
