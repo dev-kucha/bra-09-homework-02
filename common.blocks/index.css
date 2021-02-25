@@ -13,7 +13,7 @@
     transition: all .1s ease-in;
 }
 
-body {
+.page {
     height: 100vh;
     background-image:url(./bg.png);
     background-position: center;
@@ -24,10 +24,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Museo Sans Rounded';
-}
-
-a {
-    text-decoration: none;
 }
 
 .product-card {
@@ -122,6 +118,10 @@ a {
 
 .product-card__product-rate-item--active polygon {
     fill: #ffcc00;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .order-selectors {
