@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: 'Museo Sans Rounded';
         
@@ -6,7 +13,8 @@
                 url('./MuseoSansRounded-300.woff2') format('woff2');
     }
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .page {
@@ -15,44 +23,75 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: lightgray;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'Museo Sans Rounded';
 }
 
 .product-card {
     width: 686px;
     height: 391px;
-    box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+    -webkit-box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+            box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
     border-radius: 10px;
     background-color: #111a28;
     padding: 24px 56px 21px 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .product-card__logo-box {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
 }
 
 .product-card__product-box {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     width: 594px;
     height: 292px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .product-card__product-image-select {
     height: 100%;
-    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .product-card__product-image {
@@ -161,4 +200,3 @@
     padding: 10px;
     text-decoration: none;
 }
-
